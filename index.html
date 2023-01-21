@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Exam-work</title>
+</head>
+<body>
+    <!-- 1 -->
+
+    <section class="cover">
+        <!--header-menu-->
+        <header class="header-menu">
+            <nav class="top-menu">
+
+                <div class="logo">
+                    <a href="#">LOGO</a>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a class="animation-bottom" href="#">About</a></li>
+                    <li><a class="animation-bottom" href="#">Portfolio</a></li>
+                    <li><a class="animation-bottom" href="#">Blog</a></li>
+                    <li><a class="animation-bottom" href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--/header-menu-->
+
+         <!--creative-->
+         <div class="container-top">
+            <div class="left-part-top">
+                <h1>iPhone App</h1>
+                <h4>View Project</h4>
+            </div>
+        </div>
+        <!--/creative-->       
+
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img src="./images/Background-dark.png" alt="">
+            </div>
+            
+            <div class="mySlides fade">
+                <img src="./images/bgc-2.png" alt="">
+            </div>
+            
+            <div class="mySlides fade">
+                <img src="./images/bgc-3.png" alt="">
+            </div>
+               
+            <div class="mySlides fade">
+                <img src="./images/bgc-4.png" alt="">
+            </div>
+            
+        </div>
+            <br>
+            
+            <div class="dots">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+              <span class="dot" onclick="currentSlide(4)"></span> 
+            </div>
+            
+            <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+                </script>                
+    </section>
+
+    <!-- /1 -->
+    
+
+    <!-- 2 -->
+    <div class="container">
+        <div class="content">
+  
+         <h2>Automate & Simplify The Whole Process</h2>
+  <div class="area-with-sections">
+  
+      <!--section 1 -->
+  <div class="one-small-section">
+    <a href="#" class="section">
+      <div class="left-side-of-section">
+        <img class="animate__animated animate__bounce" src="./images/ue909-heart_border.svg" alt="">
+      </div>
+      <div class="right-side-of-section">
+        <h5>Best</h5>
+        <h4>Research Management</h4>
+      </div>
+    </a>
+    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit consequuntur.</p>
+  </div>
+  
+  <!--section 2 -->
+  <div class="one-small-section">
+  <a href="#" class="section">
+    <div class="left-side-of-section">
+      <img class="animate__animated animate__bounce" src="./images/ue90c-check.svg" alt="">
+    </div>
+    <div class="right-side-of-section">
+      <h5>power</h5>
+      <h4>Financial Analysis</h4>
+    </div>
+  </a>
+  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit consequuntur.</p>
+  </div>
+  
+  <!--section 3 -->
+  <div class="one-small-section">
+  <a href="#" class="section">
+    <div class="left-side-of-section">
+      <img class="animate__animated animate__bounce" src="./images/ue906-search.svg" alt="">
+    </div>
+    <div class="right-side-of-section">
+      <h5>Incredible</h5>
+      <h4>Investment Trade</h4>
+    </div>
+  </a>
+  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit consequuntur.</p>
+  </div>
+  
+  <!--section 4 -->
+  <div class="one-small-section">
+  <a href="#" class="section">
+    <div class="left-side-of-section">
+      <img class="animate__animated animate__bounce" src="./images/ue908-star_border.svg" alt="">
+    </div>
+    <div class="right-side-of-section">
+      <h5>better</h5>
+      <h4>Global Relations</h4>
+    </div>
+  </a>
+  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit consequuntur.</p>
+  </div>
+  
+  <!--section 5 -->
+  <div class="one-small-section">
+  <a href="#" class="section">
+    <div class="left-side-of-section">
+      <img class="animate__animated animate__bounce" src="./images/ue90f-instagram.svg" alt="">
+    </div>
+    <div class="right-side-of-section">
+      <h5>Unbeliveable</h5>
+      <h4>Market Benefits</h4>
+    </div>
+  </a>
+  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit consequuntur.</p>
+  </div>
+  
+  <!--section 6 -->
+  <div class="one-small-section">
+  <a href="#" class="section">
+    <div class="left-side-of-section">
+      <img class="animate__animated animate__bounce" src="./images/ue902-close.svg" alt="">
+    </div>
+    <div class="right-side-of-section">
+      <h5>Amazing</h5>
+      <h4>Primary objective</h4>
+    </div>
+  </a>
+  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit consequuntur.</p>
+  </div>
+  
+  
+  </div>
+      </div>
+    </div>
+    <!-- /2 -->
+    
+
+    <!-- 3 -->
+    <section class="team">
+        <div class="container-team">
+            <div class="title-team">
+                <h1>Great Team</h1>
+                <p>Lacinia at quis risus sed vulputate odio ut. Cras sed felis eget velit. Pellentesque id nibh tortor id aliquet lectus.</p>
+            </div>
+
+            <div class="boxes-team">
+                <div class="box-team">
+                    <div class="top-part">
+                        <img src="./images/foto-for-1.png" alt="">
+                    </div>
+                    <div class="bottom-part">
+                        <a href="#"><img src="./images/people-1.png" alt=""></a>
+                        <h1>Jontray Arnold</h1>
+                        <p>Producer</p>
+                        <div class="icons-team">
+                            <a href="#"><img src="./images/ue90d-facebook.svg" alt=""></a>
+                            <a href="#"><img src="./images/ue90f-instagram-foter.svg" alt=""></a>
+                            <a href="#"><img src="./images/ue90e-twitter.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /3 -->
+    
+
+    <!-- 4 -->
+    <section class="testi-20">
+        <div class="container-testimoit">
+            <div class="card1_testi20">
+                <img src="./images/Rectangle (18).png" alt="image">
+                <h1>Iruka Akuchi</h1>
+                <span>Apple</span>
+                <p>"Ac tortor dignissim convallis aenean et tortor at risus. Justo donec enim diam vulputate ut. Commodo viverra maecenas accumsan lacus."</p>
+            </div>
+    
+            <div class="card2_testi20 position-1">
+                <p>Hac habitasse platea dictumst. Risus in hendrerit gravida rutrum quisque non tellus orci ac. Sit amet aliquam id diam.</p>
+                <h3>KEVIN NOBOA</h3>
+                <span>Google</span>
+            </div>
+    
+            <div class="flex_testi20">
+                <div class="cards34_testi20 colors1_card20 position">
+                    <h2>"</h2>
+                    <p>Nulla pharetra diam sit amet nisl suscipit adipiscing bibendum pellentesque.</p>
+                    <h3>JANA STRASSMANN</h3>
+                    <span>Facebook</span>
+                </div>
+    
+                <div class="cards34_testi20 colors2_card20 position">
+                    <h2>"</h2>
+                    <p>Pharetra diam sit amet nisl suscipit adipiscing bibendum pellentesque.</p>
+                    <h3>OLIVIA EKLUND</h3>
+                    <span>Microsoft</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /4 -->
+    
+
+    <!-- 5 -->
+    <footer class="footer9 footer9-dark">
+        <section class="main">
+            <div class="first-block">
+                <h3 class="logo logo-dark">LOGO</h3>
+                <div class="contacts contacts-dark">
+                    <ul>
+                        <li>354 King Street, Melbourne <br> Victoria 5467 Australia</li>
+                        <li>(0321) 645-798-021</li>
+                        <li>info@mail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="second-block">
+                <h4 class="titles titles-dark">PRODUCT</h4>
+
+                <ul class="list list-dark">
+                    <li>About</li>
+                    <li>Features</li>
+                    <li>Technology</li>
+                    <li>Store</li>
+                    <li>Support</li>
+                </ul>
+            </div>
+            <div class="third-block">
+                <h4 class="titles titles-dark">COMPANY</h4>
+
+                <ul class="list list-dark">
+                    <li>About</li>
+                    <li>Vacancies</li>
+                    <li>News</li>
+                    <li>Terms</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <div class="fourth-block">
+                <h4 class="titles titles-dark">SOCIAL</h4>
+
+                <ul class="list list-dark">
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Facebook</li>
+                    <li>Youtube</li>
+                    <li>Pinterest</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="bottom-side">
+            <span class="license license-dark">© Copyright 2018. All Rights Reserved.</span>
+            <div class="logos">
+                <img src="./images/ue90d-facebook.svg" alt="">
+                <img src="./images/ue90f-instagram-foter.svg" alt="">
+                <img src="./images/ue90e-twitter.svg" alt="">
+                <img src="./images/ue910-youtube.svg" alt="">
+            </div>
+        </div>
+    </footer>
+    <!-- /5 -->
+</body>
+</html>
